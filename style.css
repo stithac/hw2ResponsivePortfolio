@@ -1,0 +1,186 @@
+/* Styles for index.html, portfolio.html, contact.html. Scroll to line 102 for styles for each of the specific pages */
+html{
+    overflow-y: scroll;
+}
+body{
+    background-image: url('./Assets/blk-background.jpg');
+    font-family: 'Open Sans', sans-serif;
+    color: #eeeeee;
+    padding-bottom: 30px;
+    overflow-wrap: normal;
+}
+/* Styles for html elements */
+h1{
+    font-size: 36px;
+    font-weight: bold;
+    color: #66fcf1;
+}
+h2{
+    font-size: 24px;
+    padding-top:5px;
+}
+h3{
+    font-size: 16px;
+    font-weight:bold;
+    color:#45a29e;
+}
+h1, h2, .nav-link{
+    font-family: 'Lato', sans-serif;
+}
+a{
+    color:#66fcf1;
+}
+/* Styles for top nav */
+header{
+    width:100%;
+    background-color: black;
+    padding:5px 0;
+    border-bottom: #45a29e solid 1px;
+}
+header h2{
+    color:#66fcf1;
+}
+#topNav{
+    float:right;
+}
+.nav-link{
+    color:#eeeeee;
+}
+.nav-link.active{
+    color: #66fcf1;
+    cursor: default;
+}
+.nav-link:hover{
+    background-color:#66fcf1;
+    color:black;
+    font-weight: bold;
+}
+.nav-link.active:hover{
+    background-color: #181818;
+    color:#66fcf1;
+    font-weight: normal;
+}
+/* Styles for social media icons */
+#icons{
+    padding: 10px;
+}
+.social-media-icon{
+    /* display: block; */
+    border: 1px solid #7d8383;
+    max-height: 30px;
+    width:30px;
+    border-radius: .25rem;
+    margin-left: 15px;
+}
+/* Styles for footer */
+footer{
+    background-color: black;
+    border-top: 3px solid #7a8382;
+    padding: 10px 0;
+    color:#eeeeee;
+    margin:0;
+}
+footer p{
+    margin:0;
+}
+/* Styles for formatting classes */
+.top-margin{
+    margin-top:30px;
+}
+.txt-light{
+    color:#eeeeee;
+}
+.center-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.styled-text{
+    color: #66fcf1;
+    font-style: italic;
+    text-align: center;
+    margin:5px 0;
+}
+/* index.html specific styles */
+.card{
+    background-color: rgb(0,0,0,.8);
+}
+.card-header{
+    border-bottom: 1px solid #45a29e;
+    padding:5px 10px;
+}
+.card-text{
+    font-size:14px;
+}
+#ash-selfie{
+    max-width:350px;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+    border-radius: 30%;
+}
+/* portfolio.html specific styles */
+#portfolio-card .row{
+    /* padding:20px 0; */
+    padding:0;
+    margin:0;
+}
+.portfolio-pic-background{
+    height:200px;
+    width: 200px;
+    background-color: rgb(69, 162, 158, .6);
+    border-radius: .25rem;
+    margin-bottom:20px;
+}
+.portfolio-pic{
+    max-height:100px;
+    width:auto;
+    margin-bottom:5px;
+}
+#portfolio-card a, #portfolio-card a:hover{
+    color:#66fcf1;
+    text-decoration: none;
+}
+/* Stles for Contact Me Page */
+#contact-me-form-card{
+    width:65%
+}
+#contact-me-form{
+    width:90%;
+    margin:10px 0;
+}
+#submit-button{
+    background: #66fcf1;
+    color:#181818;
+    font-weight: bold;
+}
+/* Media Queries for index page */
+@media(max-width:576px){
+    #ash-selfie{
+        max-width: 300px;
+        height:auto;
+        display:block;
+    }
+    .col{
+        padding:0;
+        /* margin:0; */
+    }
+}
+/* Media Queries for Portfolio page*/
+@media (max-width:991.98px){
+
+    .portfolio-pic{
+        max-height:70px;
+        width:auto;
+        margin-bottom:5px;
+    }
+    figcaption{
+        font-size:14px;
+    }
+}
+/* Media Queries for Contact Me page */
+@media(max-width:768px){
+    #contact-me-form-card{
+        width: 100%;
+    }
+}

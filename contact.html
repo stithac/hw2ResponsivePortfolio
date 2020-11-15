@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashley Stith - Contact</title>
+
+    <!-- Reset stylesheet -->
+    <link rel="stylesheet" href="./reset.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Google font external stylesheets -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <!-- Link to my external stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Viewport element -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col">
+              <h2>Ashley Stith</h2>
+            </div>
+            <div class="col">
+              <!-- Nav bar -->
+              <nav>
+                <ul id="topNav" class="nav justify-content-end">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./index.html">About</a>
+                  </li><li class="nav-item">
+                    <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Contact</a>
+                  </li>
+
+                </ul>
+              </nav>
+              <!-- End of nav bar -->
+            </div>
+          </div>
+        </div>
+        <!-- End of top container div -->
+      </header>
+      <!-- Social Media Icons -->
+      <div id = "icons" class="d-flex justify-content-end">
+        <a href="#"><img src="./Assets/icon-facebook.png" alt="facebook" class="social-media-icon"></a>
+        <a href="#"><img src="./Assets/icon-twitter.png" alt="twitter" class="social-media-icon"></a>
+        <a href="#"><img src="./Assets/icon-linkedin.png" alt="linkedin" class="social-media-icon"></a>
+        <a href="#"><img src="./Assets/icon-youtube.PNG" alt="youtube" class="social-media-icon"></a>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="container">
+        <div class="row">
+          <div class="col center-content">
+            <div class="card center-content" id="contact-me-form-card">
+            <form id="contact-me-form">
+                <div class="form-group">
+                  <label for="contact-me-form-name">Name</label>
+                  <input type="text" class="form-control" id="contact-me-form-name"  placeholder="Enter your name">
+
+                </div>
+                <div class="form-group">
+                  <label for="contact-me-form-email">Email</label>
+                  <input type="text" class="form-control" id="contact-me-form-email" placeholder="Email Address">
+                </div>
+                <div class="form-group">
+                  <label for="contact-me-form-message">Message</label>
+                  <textarea class="form-control" id="contact-me-form-message" rows="3" placeholder="Message"></textarea>
+                </div>
+                <button type="submit" class="btn" id="submit-button">Submit</button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+</body>
+<footer class="fixed-bottom ">
+    <div class="container">
+      <p class="center-content">Ashley Stith - HW2 Responsive Portfolio - 17 NOV 2020</p>
+    </div>
+</footer>
+</html>
