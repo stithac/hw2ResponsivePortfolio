@@ -43,22 +43,33 @@ header h2{
 #topNav{
     float:right;
 }
-.nav-link{
-    color:#eeeeee;
+#main-nav-bar{
+    padding:0;
+}
+.nav-link, .navbar-dark, .navbar-nav{
+    color:#eeeeee !important;
 }
 .nav-link.active{
-    color: #66fcf1;
+    color: #66fcf1 !important;
     cursor: default;
 }
 .nav-link:hover{
     background-color:#66fcf1;
-    color:black;
+    color:black !important;
     font-weight: bold;
 }
 .nav-link.active:hover{
     background-color: #181818;
     color:#66fcf1;
     font-weight: normal;
+}
+.navbar-toggler{
+    color:white;
+    padding:0;
+    margin:0;
+    font-size: 1.25em;
+    font-weight: bold;
+    /* background-color:black; */
 }
 /* Styles for social media icons */
 #icons{
@@ -141,7 +152,7 @@ footer p{
     color:#66fcf1;
     text-decoration: none;
 }
-/* Stles for Contact Me Page */
+/* Styles for Contact Me Page */
 #contact-me-form-card{
     width:65%
 }
@@ -154,19 +165,31 @@ footer p{
     color:#181818;
     font-weight: bold;
 }
-/* Media Queries for index page */
+/* Media Queries for small screens */
 @media(max-width:576px){
     #ash-selfie{
-        max-width: 300px;
+        max-width: 325px;
         height:auto;
         display:block;
     }
-    .col{
+    .col, .col-md-12{
         padding:0;
         /* margin:0; */
     }
+    p, .card-text{
+        font-size: 12px;
+    }
+    header{
+        padding:5px;
+    }
 }
-/* Media Queries for Portfolio page*/
+/* Media Queries for medium screens*/
+@media(max-width:768px){
+    #contact-me-form-card{
+        width: 100%;
+    }
+}
+/* Media Queries for large screens*/
 @media (max-width:991.98px){
 
     .portfolio-pic{
@@ -176,11 +199,5 @@ footer p{
     }
     figcaption{
         font-size:14px;
-    }
-}
-/* Media Queries for Contact Me page */
-@media(max-width:768px){
-    #contact-me-form-card{
-        width: 100%;
     }
 }

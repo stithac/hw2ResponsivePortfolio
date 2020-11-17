@@ -14,37 +14,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <!-- Link to my external stylesheet -->
     <link rel="stylesheet" href="./style.css">
+
+    <!-- Bootstrap JS (for toogle nav bar) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
     <!-- Viewport element -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <header>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col">
-              <h2>Ashley Stith</h2>
-            </div>
-            <div class="col">
-              <!-- Nav bar -->
-              <nav>
-                <ul id="topNav" class="nav justify-content-end">
-                  <li class="nav-item">
-                    <a class="nav-link" href="./index.html">About</a>
-                  </li><li class="nav-item">
-                    <a class="nav-link active" href="#">Portfolio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./contact.html">Contact</a>
-                  </li>
-
-                </ul>
-              </nav>
-              <!-- End of nav bar -->
-            </div>
-          </div>
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <h2>Ashley Stith</h2>
         </div>
-        <!-- End of top container div -->
-      </header>
+        <div class="col justify-content-end">
+          <!-- Nav bar -->
+          <nav id="main-nav-bar" class="navbar navbar-expand-sm navbar-dark justify-content-end">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+              <ul class="navbar-nav" id="topNav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- End of nav bar with nav-toggle included for small screens -->
+        </div>
+        <!-- End of col div -->
+      </div>
+      <!-- End of row div -->
+    </div>
+    <!-- End of top container div -->
+  </header>
       <!-- Social Media Icons -->
       <div id = "icons" class="d-flex justify-content-end">
         <a href="#"><img src="./Assets/icon-facebook.png" alt="facebook" class="social-media-icon"></a>
