@@ -174,10 +174,9 @@ footer p{
         padding:0;
     }
     .card-text{
-        font-size: 12px;
         float: left;
     }
-    h3, span{
+    h3, .styled-text, span{
         float:left;
     }
     footer p{
