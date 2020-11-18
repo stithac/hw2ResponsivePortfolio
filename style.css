@@ -60,7 +60,7 @@ header h2{
 }
 .nav-link.active:hover{
     background-color: #181818;
-    color:#66fcf1;
+    color:#66fcf1 !important;
     font-weight: normal;
 }
 .navbar-toggler{
@@ -168,16 +168,23 @@ footer p{
 /* Media Queries for small screens */
 @media(max-width:576px){
     #ash-selfie{
-        max-width: 325px;
         height:auto;
         display:block;
+        /* align-self: center;
+        margin:0 auto; */
     }
     .col, .col-md-12{
         padding:0;
+
         /* margin:0; */
     }
     p, .card-text{
         font-size: 12px;
+        float: left;
+
+    }
+    h3, span{
+        float:left;
     }
     header{
         padding:5px;
