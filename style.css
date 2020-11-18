@@ -1,4 +1,4 @@
-/* Styles for index.html, portfolio.html, contact.html. Scroll to line 102 for styles for each of the specific pages */
+/* Styles for index.html, portfolio.html, contact.html. Scroll to line 114 for styles for each of the specific pages */
 html{
     overflow-y: scroll;
 }
@@ -69,7 +69,6 @@ header h2{
     margin:0;
     font-size: 1.25em;
     font-weight: bold;
-    /* background-color:black; */
 }
 /* Styles for social media icons */
 #icons{
@@ -132,7 +131,6 @@ footer p{
 }
 /* portfolio.html specific styles */
 #portfolio-card .row{
-    /* padding:20px 0; */
     padding:0;
     margin:0;
 }
@@ -154,7 +152,8 @@ footer p{
 }
 /* Styles for Contact Me Page */
 #contact-me-form-card{
-    width:65%
+    width:65%;
+    padding-bottom: 25px;
 }
 #contact-me-form{
     width:90%;
@@ -170,21 +169,19 @@ footer p{
     #ash-selfie{
         height:auto;
         display:block;
-        /* align-self: center;
-        margin:0 auto; */
     }
     .col, .col-md-12{
         padding:0;
-
-        /* margin:0; */
     }
-    p, .card-text{
+    .card-text{
         font-size: 12px;
         float: left;
-
     }
     h3, span{
         float:left;
+    }
+    footer p{
+        font-size:14px;
     }
     header{
         padding:5px;
@@ -198,7 +195,6 @@ footer p{
 }
 /* Media Queries for large screens*/
 @media (max-width:991.98px){
-
     .portfolio-pic{
         max-height:70px;
         width:auto;
