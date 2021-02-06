@@ -1,4 +1,5 @@
-#### hw2ResponsivePortfolio, 17 NOV 20, 4 FEB 21
+#### hw2ResponsivePortfolio, 17 NOV 20, 
+#### Updated Portfolio, 4 FEB 21
 
 #### By Ashley Stith
 
